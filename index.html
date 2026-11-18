@@ -1,1 +1,121 @@
-Hello World
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Blace Houle is a data scientist and educator in New Bedford, Massachusetts, specializing in data science and AI.">
+    <title>Blace Houle — Data Science &amp; AI</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --paper: #f7f5ee;
+        --ink: #242d29;
+        --muted: #555e58;
+        --accent: #28634f;
+        --line: #d6d9cf;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.7;
+      }
+      .page { width: min(100% - 3rem, 48rem); margin: 0 auto; }
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 2rem 0;
+        border-bottom: 1px solid var(--line);
+        font-size: 0.875rem;
+      }
+      .wordmark { font-weight: 700; text-decoration: none; color: var(--ink); }
+      nav { display: flex; flex-wrap: wrap; gap: 1.25rem; }
+      a { color: var(--accent); text-underline-offset: 0.22em; }
+      a:hover { text-decoration-thickness: 2px; }
+      a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+      .skip-link { position: absolute; top: -5rem; left: 1rem; }
+      .skip-link:focus { top: 1rem; padding: 0.5rem 1rem; background: var(--paper); }
+      .intro { padding: 5rem 0 4rem; }
+      .eyebrow {
+        margin: 0 0 1.25rem;
+        color: var(--accent);
+        font: 0.75rem/1.6 ui-monospace, SFMono-Regular, Consolas, monospace;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+      h1 {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(3.5rem, 12vw, 6rem);
+        font-weight: 400;
+        line-height: 1.05;
+        letter-spacing: -0.055em;
+      }
+      .tagline { margin: 1.5rem 0 1rem; font-size: clamp(1.25rem, 4vw, 1.65rem); line-height: 1.4; }
+      .intro-copy { max-width: 36rem; margin-bottom: 2rem; color: var(--muted); }
+      .contact-link {
+        display: inline-block;
+        padding: 0.65rem 1.1rem;
+        border: 1px solid var(--accent);
+        border-radius: 0.25rem;
+        text-decoration: none;
+      }
+      .contact-link:hover { background: var(--accent); color: var(--paper); }
+      section + section { padding: 2.5rem 0; border-top: 1px solid var(--line); }
+      h2 { margin: 0 0 1rem; font-size: 1.1rem; font-weight: 650; }
+      section p { max-width: 40rem; }
+      .about-copy { color: var(--muted); }
+      .links { display: flex; flex-wrap: wrap; gap: 0.75rem 1.75rem; padding: 0; list-style: none; }
+      footer { padding: 1.5rem 0 2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.8rem; }
+      @media (max-width: 480px) {
+        .page { width: calc(100% - 2rem); }
+        header { padding: 1.25rem 0; }
+        .intro { padding: 3.5rem 0 3rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page">
+      <header>
+        <a class="wordmark" href="./">Blace Houle</a>
+        <nav aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="https://github.com/blacehoule">GitHub</a>
+        </nav>
+      </header>
+      <main id="main">
+        <section class="intro" aria-labelledby="intro-title">
+          <p class="eyebrow">New Bedford, Massachusetts</p>
+          <h1 id="intro-title">Hi, I’m Blace.</h1>
+          <p class="tagline">Data scientist. Computer scientist. Educator.</p>
+          <p class="intro-copy">I specialize in data science and AI, with a background in operations research. I also offer consulting and tutoring services.</p>
+          <a class="contact-link" href="mailto:blacehoule@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+        </section>
+        <section id="about" aria-labelledby="about-title">
+          <h2 id="about-title">A little about me</h2>
+          <div class="about-copy">
+            <p>I studied Economics and Mathematics at The College of William &amp; Mary, then earned a master’s degree in Computer Science specializing in Operations Research.</p>
+            <p>My work has spanned AI for contact centers, optimization for online retail, and attribution modeling for television advertising, with roles at Afiniti, Wayfair, LiveRamp, and Nike.</p>
+          </div>
+        </section>
+        <section id="contact" aria-labelledby="contact-title">
+          <h2 id="contact-title">Let’s connect</h2>
+          <p>For consulting, tutoring, or a conversation about data science and AI, send me an email.</p>
+          <ul class="links">
+            <li><a href="mailto:blacehoule@gmail.com">Email me</a></li>
+            <li><a href="https://github.com/blacehoule">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/blace-houle-351b1437/">LinkedIn</a></li>
+          </ul>
+        </section>
+      </main>
+      <footer>Blace Houle · Built with HTML &amp; CSS · Hosted on GitHub Pages</footer>
+    </div>
+  </body>
+</html>
